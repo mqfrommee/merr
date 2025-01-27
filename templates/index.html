@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> name & name - Наша Свадьба</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш_API_ключ&lang=ru_RU" type="text/javascript"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#story">История</a></li>
+            <li><a href="#timeline">Программа</a></li>
+            <li><a href="#location">Место</a></li>
+            <li><a href="#rsvp">Участие</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>name & name</h1>
+            <p>Приглашаем вас разделить с нами особенный день</p>
+            <p>X.X.2025</p>
+            <div class="hero-buttons">
+                <a href="#rsvp" class="btn">Подтвердить участие</a>
+                <a href="#about" class="btn">Подробнее</a>
+            </div>
+        </div>
+    </div>
+
+    <section id="about" class="about" data-aos="fade-up">
+        <h2 class="section-title">О нас</h2>
+        <div class="about-content">
+            <div class="couple-photos">
+                <div class="photo-card" data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Пара">
+                    <div class="photo-info">
+                        <h3>Первая встреча</h3>
+                        <p>idk</p>
+                    </div>
+                </div>
+                <div class="photo-card" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Помолвка">
+                    <div class="photo-info">
+                        <h3>Помолвка</h3>
+                        <p>X.X.20XX</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="story" class="story" data-aos="fade-up">
+        <h2 class="section-title">Наша История</h2>
+        <div class="story-timeline">
+            <div class="story-item" data-aos="fade-right">
+                <div class="story-date">Дата</div>
+                <div class="story-content">
+                    <h3>Первая встреча</h3>
+                    <p>История встречи</p>
+                </div>
+            </div>
+            <div class="story-item" data-aos="fade-left">
+                <div class="story-date">Дата</div>
+                <div class="story-content">
+                    <h3>Первое свидание</h3>
+                    <p>Романтический вечер в итальянском ресторане...</p>
+                </div>
+            </div>
+            <div class="story-item" data-aos="fade-right">
+                <div class="story-date">Дата</div>
+                <div class="story-content">
+                    <h3>Предложение</h3>
+                    <p>На вершине горы, под звёздным небом...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline" data-aos="fade-up">
+        <h2 class="section-title">Программа дня</h2>
+        <div class="timeline-branch">
+            <div class="timeline-branch-line"></div>
+            
+            <div class="timeline-event left" data-aos="fade-right">
+                <div class="timeline-event-content">
+                    <div class="timeline-event-time">13:00</div>
+                    <div class="timeline-event-dot"></div>
+                    <h3>Сбор гостей</h3>
+                    <p>Встреча и приветственные напитки в лобби ресторана. Фуршет с легкими закусками и шампанским.</p>
+                </div>
+            </div>
+
+            <div class="timeline-event right" data-aos="fade-left">
+                <div class="timeline-event-content">
+                    <div class="timeline-event-time">14:00</div>
+                    <div class="timeline-event-dot"></div>
+                    <h3>Церемония</h3>
+                    <p>Торжественная регистрация брака в главном зале. Обмен кольцами и первый поцелуй молодоженов.</p>
+                </div>
+            </div>
+
+            <div class="timeline-event left" data-aos="fade-right">
+                <div class="timeline-event-content">
+                    <div class="timeline-event-time">15:00</div>
+                    <div class="timeline-event-dot"></div>
+                    <h3>Фотосессия</h3>
+                    <p>Праздничная фотосессия с гостями в живописном парке. Групповые и индивидуальные фото на память.</p>
+                </div>
+            </div>
+
+            <div class="timeline-event right" data-aos="fade-left">
+                <div class="timeline-event-content">
+                    <div class="timeline-event-time">16:00</div>
+                    <div class="timeline-event-dot"></div>
+                    <h3>Банкет</h3>
+                    <p>Праздничный ужин и развлекательная программа. Живая музыка, конкурсы и поздравления от гостей.</p>
+                </div>
+            </div>
+
+            <div class="timeline-event left" data-aos="fade-right">
+                <div class="timeline-event-content">
+                    <div class="timeline-event-time">20:00</div>
+                    <div class="timeline-event-dot"></div>
+                    <h3>Первый танец</h3>
+                    <p>Романтический момент для молодожёнов под специально выбранную композицию. Затем - танцы для всех гостей.</p>
+                </div>
+            </div>
+
+            <div class="timeline-event right" data-aos="fade-left">
+                <div class="timeline-event-content">
+                    <div class="timeline-event-time">23:00</div>
+                    <div class="timeline-event-dot"></div>
+                    <h3>Завершение</h3>
+                    <p>Прощание с гостями, запуск небесных фонариков и праздничный фейерверк на закрытие вечера.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="location" class="location" data-aos="fade-up">
+        <h2 class="section-title">Место проведения</h2>
+        <div class="location-content">
+            <div class="location-info">
+                <h3>Ресторан "Панорама"</h3>
+                <p>ул. Примерная, д. 123</p>
+            </div>
+            <div id="map" class="yandex-map"></div>
+        </div>
+    </section>
+
+    <section id="dress-code" class="dress-code" data-aos="fade-up">
+        <h2 class="section-title">Дресс-код</h2>
+        <div class="dress-code-content">
+            <div class="dress-code-item">
+                <i class="fas fa-female"></i>
+                <h3>Для дам</h3>
+                <p>Вечерние платья пастельных тонов</p>
+            </div>
+            <div class="dress-code-item">
+                <i class="fas fa-male"></i>
+                <h3>Для господ</h3>
+                <p>Костюмы светлых оттенков</p>
+            </div>
+        </div>
+    </section>
+
+    <form class="rsvp-form" action="{{ url_for('submit') }}" method="POST">
+        <div class="form-group">
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="guests">Количество гостей</label>
+            <select id="guests" name="guests">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="dietary">Особые пожелания по меню</label>
+            <textarea id="dietary" name="dietary"></textarea>
+        </div>
+        <div class="form-group">
+            <label>Предпочтения по напиткам</label>
+            <div class="drinks-options">
+                <label><input type="checkbox" name="drinks" value="wine"> Вино</label>
+                <label><input type="checkbox" name="drinks" value="champagne"> Шампанское</label>
+                <label><input type="checkbox" name="drinks" value="cocktails"> Коктейли</label>
+                <label><input type="checkbox" name="drinks" value="nonalcoholic"> Безалкогольные</label>
+            </div>
+        </div>
+        <button type="submit" class="btn">Подтвердить</button>
+    </form>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    <div class="flash-messages">
+      {% for category, message in messages %}
+        <p class="flash-{{ category }}">{{ message }}</p>
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endwith %}
+
+    
+
+    <div class="countdown" data-aos="fade-up">
+        <h2 class="section-title">До свадьбы осталось</h2>
+        <div class="countdown-timer">
+            <div class="countdown-item">
+                <div class="countdown-number" id="days">00</div>
+                <div class="countdown-label">Дней</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-number" id="hours">00</div>
+                <div class="countdown-label">Часов</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-number" id="minutes">00</div>
+                <div class="countdown-label">Минут</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-number" id="seconds">00</div>
+                <div class="countdown-label">Секунд</div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>С любовью, name и name</p>
+        <p>v 2025</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="static/main.js"></script>
+</body>
+</html>
